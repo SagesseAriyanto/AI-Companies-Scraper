@@ -44,4 +44,6 @@ for company in companies:
     })
 
 
-
+# Save to CSV
+df = pd.DataFrame(company_data)
+df.to_csv("AI_companies.csv", index=False)
