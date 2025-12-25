@@ -12,12 +12,13 @@ soup = BeautifulSoup(response.text, 'html.parser')
 companies = soup.find_all("div", class_="div-block-59")
 for company in companies:
     # Check if we've already seen this URL
-    link = urljoin(url, company.find("a", class_="tool-item-link---new")["href"])
+    link_element = company.find("a", class_="tool-item-link---new")
+    link = urljoin(url, link_element["href"])
     if link in seen_urls:
         continue
     seen_urls.add(link)
     # Extract basic information
-    name = company.find("a", class_="tool-item-link---new").text
+    name = link_element.text
     description = company.find("div", class_="tool-item-description-box---new").text
     category = company.find("div", class_="text-block-53").text
     upvotes = int(company.find(
