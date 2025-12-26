@@ -6,26 +6,44 @@ import pandas as pd
 seen_urls = set()           # Track what we've already processed
 company_data = []           # Store all scraped data
 
-def get_data():
+def scrape_all_pages():
     global seen_urls, company_data
-    url = "https://www.futuretools.io/"
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    companies = soup.find_all("div", class_="div-block-59")
-    for company in companies:
-        # Check if we've already seen this URL
-        link_element = company.find("a", class_="tool-item-link---new")
-        link = urljoin(url, link_element["href"])
-        if link in seen_urls:
-            continue
-        seen_urls.add(link)
-        # Extract basic information
-        name = link_element.text
-        description = company.find("div", class_="tool-item-description-box---new").text
-        category = company.find("div", class_="text-block-53").text
-        upvotes = int(company.find(
-            "div", class_="text-block-52 jetboost-item-total-favorites-vd2l"
-        ).text)
+
+    base_url = "https://www.futuretools.io/"
+    page = 1
+
+    while True:
+        # Construct the URL for the current page
+        url = f"{base_url}?b34cbd71_page={page}"
+        print(f"Scraping page: {page}")
+
+        response = requests.get(url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        try:
+            # Find all companies in the current page
+            companies = soup.find_all("div", class_="div-block-59")
+
+            # If no companies found, we've reached the last page
+            if not companies:
+                print(f"No companies found on page {page}. Stopping.")
+                break
+
+            # Process each company
+            for company in companies:
+                # Check if we've already seen this URL
+                link_element = company.find("a", class_="tool-item-link---new")
+                link = urljoin(url, link_element["href"])
+                if link in seen_urls:
+                    continue
+                seen_urls.add(link)
+                # Extract basic information
+                name = link_element.text
+                description = company.find("div", class_="tool-item-description-box---new").text
+                category = company.find("div", class_="text-block-53").text
+                upvotes = int(company.find(
+                    "div", class_="text-block-52 jetboost-item-total-favorites-vd2l"
+                ).text)
 
         # Navigate detailed page
         company_response = requests.get(link)
