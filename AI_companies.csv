@@ -8,11 +8,11 @@ MaviBot,Chat,Freemium,1,"A nocode platform for building chatbots, CRM, and multi
 Streamoid,Automation & Agents,Freemium,2,"A tool to automate product lifecycle, generate visuals, and manage catalogs.",https://futuretools.link/streamoid-v9zezv
 Baselight Assistant,Aggregators ,Freemium,1,"A platform for exploring, querying, and sharing structured data.",https://futuretools.link/baselight-assistant-4cnhlj
 Guideless,Video Editing,Paid,2,A tool that converts browser click-throughs into branded how-to videos.,https://futuretools.link/guideless-2x8st3
-Spell,Generative Art,Freemium,12,"A platform that generates editable, 3D worlds from text or images.",https://futuretools.link/spell-z9d09f
+Spell,Generative Art,Freemium,14,"A platform that generates editable, 3D worlds from text or images.",https://futuretools.link/spell-z9d09f
 Fermi Dev,Automation & Agents,Paid,3,"A platform that unifies systems, models and automates crossâsystem workflows.",https://futuretools.link/fermi-dev-fwkv8p
 We.Inc,Marketing,Paid,3,"A nocode growth platform to build, market, and sell from one dashboard.",https://futuretools.link/we-inc-j641j6
 Dafthunk,Automation & Agents,Paid,1,A browser-based visual workflow builder for serverless automation on Cloudflare's edge.,https://futuretools.link/dafthunk-ogymlh
-RoomX AI,Image Improvement,Freemium,2,A tool that that genrates staged images and listing videos from vacant property photos.,https://futuretools.link/roomx-ai-km7og3
+RoomX AI,Image Improvement,Freemium,3,A tool that that genrates staged images and listing videos from vacant property photos.,https://futuretools.link/roomx-ai-km7og3
 Commentions,Social Media,Paid,2,"A tool that posts contextual, comments on X, LinkedIn, and YouTube to mention your brand and drive traffic.",https://futuretools.link/commentions-0uwlc2
 Hypnotype,Generative Video,Freemium,5,A tool that turns long-form audio into kinetic typography videos by transcribing and syncing text with visual templates.,https://futuretools.link/hypnotype-kquw3n
 One Course,Productivity,Freemium,3,"A tool for course authoring and LMS that drafts content, manages learners, and enterprise integration.",https://futuretools.link/one-course-rsdap2
@@ -36,13 +36,13 @@ MedAlly,Automation & Agents,Freemium,3,"A platform that automates clinical docum
 Dor Labs,Generative Art,Freemium,6,"A tool that converts a single reference into 3Ã3 storyboard and thumbnail grids, generates alternate shots/Bâroll, and provides selective upscaling.",https://futuretools.link/dor-labs-h8as53
 Sup AI,Research,Freemium,7,"An unified multimodel AI workspace delivering reliable, auditable, low-hallucination answers.",https://futuretools.link/sup-ai-12h8qm
 TextDeck,Productivity,Paid,13,A tool that converts text prompts into fully designed PowerPoint decks.,https://futuretools.link/textdeck-c2vfvg
-Subject.so,Generative Video,Paid,7,A tool that turns ideas into cohesive storyboards and finished videos using narrative and visuals.,https://futuretools.link/subject-so-brynpr
+Subject.so,Generative Video,Paid,8,A tool that turns ideas into cohesive storyboards and finished videos using narrative and visuals.,https://futuretools.link/subject-so-brynpr
 SociaVault,Social Media,Paid,2,An API for extracting real-time structured social data from 25+ platforms.,https://futuretools.link/sociavault-icmcnv
 Autohive,Automation & Agents,Freemium,9,A Nocode platform to visually build and run AI agents and workflows for repetitive business tasks.,https://futuretools.link/autohive-q50tof
 AccessAudit,Generative Code,Freemium,4,"A web accessibility scanner that finds WCAG/ADA/Section 508 issues, issues compliance badges, and generates AI code fixes.",https://futuretools.link/accessaudit-s7hg4w
 Superway,Research,Paid,4,A platform that scans signals to surface and forecast trends and provide data-backed recommendations.,https://futuretools.link/superway-oyaxky
 Tenets,Generative Code,Open Source,3,"A tool that builds code context (MCP server, Python library, CLI) to provide high-signal, privacy-preserving project context for AI coding assistants.",https://futuretools.link/tenets-5liib9
-FAQ Ally,Chat,Paid,5,A tool that converts company documents into a searchable AI-trained knowledge base and conversational assistants.,https://futuretools.link/faq-ally-62cpzc
+FAQ Ally,Chat,Paid,6,A tool that converts company documents into a searchable AI-trained knowledge base and conversational assistants.,https://futuretools.link/faq-ally-62cpzc
 Crops,Productivity,Paid,4,"A platform that auto-tags and organizes creative assets, scans designs for issues, and centralizes feedback.",https://futuretools.link/crops-d9rk02
 AutoSend,Marketing,Paid,5,"A tool and API to send and track transactional and marketing emails
 ",https://futuretools.link/autosend-q782qd
@@ -74,7 +74,7 @@ Rewnue,Marketing,Freemium,5,"A platform that creates data-driven, high-convertin
 Ordinal,Social Media,Paid,5,"A tool to draft, plan, and schedule social media content.",https://futuretools.link/ordinal-50c0ap
 EveChange,Copywriting,Freemium,22,"A platform that drafts, refines, and publishes release notes and marketing copy.",https://futuretools.link/evechange-5aemq5
 ORI,Finance,Paid,4,"A tool for BFSI that automates voice, chat and email agents for lead qualification, collections and renewals.",https://futuretools.link/ori-8qza72
-Gaffa,Automation & Agents,Paid,8,A REST API for scalable browser automation and web content processing.,https://futuretools.link/gaffa-cq8m6f
+Gaffa,Automation & Agents,Paid,9,A REST API for scalable browser automation and web content processing.,https://futuretools.link/gaffa-cq8m6f
 UTMGuard,Marketing,Paid,10,A tool that finds and alerts on broken or inconsistent UTM parameters in Google Analytics 4.,https://futuretools.link/utmguard-auwu43
 Velt,Productivity,Freemium,7,"A collaboration SDK that adds real-time features like comments, live cursors, and searchable recordings to B2B products.",https://futuretools.link/velt-jljd8k
 Plurality Network,Automation & Agents,Freemium,7,"A tool for decentralized profile and context layer to preserve user memories, preferences, and context across LLMs and apps.",https://futuretools.link/plurality-network-k2bq4x
@@ -89,7 +89,7 @@ NodeLand,Productivity,Paid,4,"A visual workspace that turns notes, documents, an
 Rootlenses,Automation & Agents,Paid,4,A tool to query and visualize connected data and automate outreach with conversational voice agents.,https://futuretools.link/rootlenses-aanjx9
 Atono,Productivity,Freemium,8,"A platform that unifies roadmapping, story and project management.",https://futuretools.link/atono-sco1y6
 Starzero.ai,Video Editing,Freemium,18,A tool that finds exact moments in videos using multimodal AI.,https://futuretools.link/starzero-ai-gi6t23
-Google Antigravity,Automation & Agents,Free,60,"An agentic IDE that turns developer intent into working code, UI prototypes, tests, and verifications using AI agents.",https://futuretools.link/google-antigravity-p0ti21
+Google Antigravity,Automation & Agents,Free,61,"An agentic IDE that turns developer intent into working code, UI prototypes, tests, and verifications using AI agents.",https://futuretools.link/google-antigravity-p0ti21
 2wai,Avatar,Paid,25,An iOS app for creating AI avatars from a short phone video and conversations in 40+ languages.,https://futuretools.link/2wai-4231vx
 Leni,Finance,Paid,8,"A platform for commercial real estate analytics, reporting, and KPI guidance.",https://futuretools.link/leni-ey2ncu
 Kipps AI,Automation & Agents,Freemium,5,"A tool to build voice, chat and WhatsApp agents for customer support and lead qualification.",https://futuretools.link/kipps-ai-xhdpa3
