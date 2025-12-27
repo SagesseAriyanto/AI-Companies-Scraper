@@ -8,6 +8,7 @@ import os
 seen_urls = set()  # Track what we've already processed
 company_data = []  # Store all scraped data
 
+
 # Load existing data to global variables
 def load_existing_data():
     global seen_urls, company_data
@@ -17,6 +18,7 @@ def load_existing_data():
         company_data = df.to_dict("records")
         seen_urls = set(item["Link"] for item in company_data)
         print(f"Loaded {len(seen_urls)} existing entries.")
+
 
 def scrape_all_pages():
     global seen_urls, company_data
@@ -36,7 +38,7 @@ def scrape_all_pages():
         response = requests.get(url)
         soup = BeautifulSoup(response.text, "html.parser")
 
-        new_items = 0           # Track new items found on this page
+        new_items = 0  # Track new items found on this page
         try:
             # Find all companies in the current page
             companies = soup.find_all("div", class_="div-block-59")
@@ -96,27 +98,23 @@ def scrape_all_pages():
                     time.sleep(0.5)
                 except Exception as e:
                     print(f"Error scraping {link}: {e}")
-            
+
             if new_items == 0:
                 print(f"No new items found on page {page}")
             else:
                 print(f"Found {new_items} new items on page {page}")
             page += 1  # Move to the next page
             time.sleep(1)
-        
 
         except Exception as e:
             print(f"Error processing page {page}: {e}")
             break
-        
+
+
 # load_existing_data()
 # scrape_all_pages()
 
 # Save to CSV (overwrites with OLD + NEW combined)
-if company_data:
-    df = pd.DataFrame(company_data)
-    df.to_csv("AI_companies.csv", index=False)
-    print(f"\n✅ Saved {len(company_data)} total companies to CSV!")
-    print(df.tail())
-else:
-    print("No data to save!")
+
+df = pd.read_csv("AI_companies.csv")
+print(df.duplicated().values.any())
