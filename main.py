@@ -3,10 +3,20 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import pandas as pd
 import time
+import os
 
 seen_urls = set()  # Track what we've already processed
 company_data = []  # Store all scraped data
 
+# Load existing data to global variables
+def load_existing_data():
+    global seen_urls, company_data
+
+    if os.path.exists("AI_companies.csv"):
+        df = pd.read_csv("AI_companies.csv")
+        company_data = df.to_dict("records")
+        seen_urls = set(item["Link"] for item in company_data)
+        print(f"Loaded {len(seen_urls)} existing entries.")
 
 def scrape_all_pages():
     global seen_urls, company_data
@@ -98,12 +108,15 @@ def scrape_all_pages():
         except Exception as e:
             print(f"Error processing page {page}: {e}")
             break
+        
+# load_existing_data()
+# scrape_all_pages()
 
-
-scrape_all_pages()
-# Save to CSV
-df = pd.DataFrame(company_data)
-df.to_csv("AI_companies.csv", index=False)
-
-data = pd.read_csv("AI_companies.csv")
-print(data.tail())
+# Save to CSV (overwrites with OLD + NEW combined)
+if company_data:
+    df = pd.DataFrame(company_data)
+    df.to_csv("AI_companies.csv", index=False)
+    print(f"\n✅ Saved {len(company_data)} total companies to CSV!")
+    print(df.tail())
+else:
+    print("No data to save!")
