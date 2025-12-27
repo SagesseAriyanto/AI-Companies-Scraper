@@ -113,8 +113,3 @@ def scrape_all_pages():
 
 # load_existing_data()
 # scrape_all_pages()
-
-# Save to CSV (overwrites with OLD + NEW combined)
-
-df = pd.read_csv("AI_companies.csv")
-print(df.duplicated().values.any())
