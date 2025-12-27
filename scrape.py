@@ -13,8 +13,8 @@ company_data = []  # Store all scraped data
 def load_existing_data():
     global seen_urls, company_data
 
-    if os.path.exists("AI_companies.csv"):
-        df = pd.read_csv("AI_companies.csv")
+    if os.path.exists("ai_data.csv"):
+        df = pd.read_csv("ai_data.csv")
         company_data = df.to_dict("records")
         seen_urls = set(item["Link"] for item in company_data)
         print(f"Loaded {len(seen_urls)} existing entries.")
